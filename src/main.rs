@@ -147,7 +147,7 @@ fn pfetch(info: Vec<(pfetch::Color, String, String)>, logo: pfetch::Logo, logo_e
     crossterm::execute!(std::io::stdout(), crossterm::terminal::DisableLineWrap)
         .unwrap_or_default();
 
-    println!("{pfetch_str}");
+    print!("{pfetch_str}");
 
     // enable line wrap
     crossterm::execute!(std::io::stdout(), crossterm::terminal::EnableLineWrap)
